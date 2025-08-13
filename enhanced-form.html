@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A simple HTML5 page demonstrating lists, tables, media, and a validated form.">
+  <meta name="keywords" content="HTML5, form, media, accessibility, validation">
+  <meta name="author" content="Muruga Gachuru">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form Demo</title>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Demo Page</h1>
+    <p>This page showcases lists, tables, media, and a complete HTML5 form with built-in validation.</p>
+  </header>
+
+  <main>
+    <!-- Section: Lists -->
+    <section>
+      <h2>My Favorite Programming Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+        <li>Java</li>
+      </ul>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Course</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Web Development</td>
+            <td>10:00 AM - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Python Programming</td>
+            <td>2:00 PM - 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Data Structures</td>
+            <td>11:00 AM - 1:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>Featured Media</h2>
+      <figure>
+        <img src="https://images.app.goo.gl/rAKvf3xbscZDjjn49/300x200" alt="Placeholder image of a computer" width="300">
+        <figcaption>Learning to code is fun and rewarding!</figcaption>
+      </figure>
+      <audio controls>
+        <source src="https://www.pexels.com/video/playing-a-vinyl-record-on-a-spinning-turntable-2984380/" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <video width="320" height="240" controls>
+        <source src="https://www.pexels.com/video/programming-on-laptop-13522087/" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section: Form -->
+    <section>
+      <h2>Contact Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="course">Choose a course:</label>
+          <select id="course" name="course" required>
+            <option value="">--Select--</option>
+            <option value="web">Web Development</option>
+            <option value="python">Python Programming</option>
+            <option value="data">Data Structures</option>
+          </select>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Your message here..."></textarea>
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
